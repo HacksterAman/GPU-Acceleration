@@ -6,7 +6,9 @@ This program is designed to stress test and compare the performance of CPUs and 
 ### Monte Carlo Method for Approximating Pi
 The Monte Carlo method is a statistical technique that uses random sampling to estimate numerical results. In the context of approximating Pi, it involves randomly selecting points within a square and determining how many fall within a quarter circle inscribed within the square. By comparing the ratio of points inside the circle to the total number of points, Pi can be approximated.
 
-![Monte Carlo Method](MonteCarlo.png)
+<p align="center">
+  <img src="MonteCarlo.png" alt="Monte Carlo Method" width="256">
+</p>
 
 ## Extreme Parallelism
 The program leverages extreme parallelism by exploiting the massive parallel processing capabilities of GPUs and multicore multithreading on CPUs. With GPU acceleration through CUDA programming and JIT compilation, the workload is divided into thousands of independent tasks, enabling simultaneous execution across multiple cores or threads. This extreme parallelism significantly speeds up computations, resulting in faster performance compared to traditional sequential processing methods.
@@ -38,3 +40,7 @@ Just-In-Time compilation with Numba translates Python functions into optimized m
 
 ## Disclaimer
 This program is for educational and experimental purposes only. Results may vary depending on hardware configuration and other factors.
+
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
