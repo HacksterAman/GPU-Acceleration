@@ -10,6 +10,8 @@ The Monte Carlo method is a statistical technique that uses random sampling to e
   <img src="MonteCarlo.png" alt="Monte Carlo Method" width="256">
 </p>
 
+    π ≈ 4 * (number of points inside the circle) / (total number of points)
+
 ## Extreme Parallelism
 The program leverages extreme parallelism by exploiting the massive parallel processing capabilities of GPUs and multicore multithreading on CPUs. With GPU acceleration through CUDA programming and JIT compilation, the workload is divided into thousands of independent tasks, enabling simultaneous execution across multiple cores or threads. This extreme parallelism significantly speeds up computations, resulting in faster performance compared to traditional sequential processing methods.
 
