@@ -8,8 +8,7 @@ import time
 def compute_pi_gpu(rng_states, iterations, out):
     thread_id = cuda.grid(1)
 
-    # Compute pi by drawing random (x, y) points and finding what
-    # fraction lie inside a unit circle
+    # Compute pi by drawing random (x, y) points and finding what fraction lie inside a unit circle
     inside = 0
     for i in range(iterations):
         x = xoroshiro128p_uniform_float32(rng_states, thread_id)
