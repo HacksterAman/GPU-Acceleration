@@ -49,8 +49,7 @@ __device__ float xoroshiro128p_uniform_float32(unsigned int *s) {
 def compute_pi_cpu(iterations, out):
     """Find the maximum value in values and store in result[0]"""
     for thread_id in prange(out.shape[0]):
-        # Compute pi by drawing random (x, y) points and finding what
-        # fraction lie inside a unit circle
+        # Compute pi by drawing random (x, y) points and finding what fraction lie inside a unit circle
         inside = 0
         for i in prange(iterations):
             x, y = np.random.rand(), np.random.rand()
